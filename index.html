@@ -32,7 +32,7 @@
           <nav class="menu">
             <ul class="nav-menu">
               <li class="list item">
-                <a href="" class="accent nav-item">Студія</a>
+                <a href="" class="accent accent-item nav-item">Студія</a>
               </li>
               <li class="list item">
                 <a href="./portfolio.html" class="nav-item">Портфоліо</a>
@@ -68,7 +68,9 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button primary">Замовити послугу</button>
+          <button type="button" class="button primary" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -416,15 +418,25 @@
             </li>
             <li class="list item-join">
               <a href="" class="icon-join">
-                <svg width="20px" height="20px" class=>
+                <svg width="20px" height="20px">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
