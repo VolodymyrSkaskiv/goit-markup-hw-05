@@ -353,18 +353,13 @@ body {
   justify-content: center;
 }
 
-/* .item-join-team {
-  display: flex;
-  
-} */
-
 .icon-join-team {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--white);
-  fill: #afb1b8;
+  fill: var(--border-client);
   background-size: 20px;
   justify-content: center;
   align-items: center;
@@ -397,7 +392,7 @@ body {
   border: 1px solid var(--border-client);
   border-radius: 4px;
 
-  fill: #afb1b8;
+  fill: var(--border-client);
   background-size: 20px;
   justify-content: center;
   align-items: center;
@@ -534,12 +529,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   border-radius: 50%;
-
-  fill: #afb1b8;
-  background-repeat: no-repeat;
-  background-size: 11px;
-  /* background-image: url(../images/close.svg); */
-  background-position: center;
+  fill: var(--border-client);
 }
 
 .modal-close:hover,
