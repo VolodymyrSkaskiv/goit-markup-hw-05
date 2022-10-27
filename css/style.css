@@ -495,11 +495,15 @@ body {
   height: 100%;
 
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -530,6 +534,7 @@ body {
 
   border-radius: 50%;
   fill: var(--border-client);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
