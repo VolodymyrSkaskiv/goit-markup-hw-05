@@ -90,6 +90,7 @@ body {
 
 .header {
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-list {
@@ -115,12 +116,14 @@ body {
   color: var(--title-color);
 }
 
-.accent-item::after {
+a.accent.accent-item::after {
   content: "";
   display: block;
 
+  position: relative;
+  bottom: -24px;
+
   height: 4px;
-  margin-top: 28px;
 
   background: var(--accent-color);
   border-radius: 2px;
@@ -157,6 +160,13 @@ body {
 }
 
 /*=========FOCUS HOVER====================*/
+.nav-item,
+.contact,
+.address-map,
+.email-tel {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .accent,
 .nav-item:hover,
@@ -303,9 +313,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* .container > .title-before {
-  margin-bottom: 94px;
-} */
 
 /*========SECTION  Наша команда =========*/
 
@@ -363,6 +370,9 @@ body {
   background-size: 20px;
   justify-content: center;
   align-items: center;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-join-team:focus,
@@ -396,6 +406,9 @@ body {
   background-size: 20px;
   justify-content: center;
   align-items: center;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-join-client:hover,
@@ -478,6 +491,8 @@ body {
   fill: var(--bgr-white);
   align-items: center;
   justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-join:hover,
 .icon-join:focus {
@@ -497,7 +512,8 @@ body {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -567,6 +583,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: var(--bgr-gray);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .radio-btn:hover,
