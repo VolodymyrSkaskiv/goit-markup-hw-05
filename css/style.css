@@ -1,6 +1,15 @@
 /* Color palitra */
 /* text #FFFFFF rgb(255, 255, 255, 0.6) #757575 #212121 #2196F3*/
 /* background #F5F5F5  F5F4FA 2F303A*/
+/*
+em - от текущего шрифта
+% - от родительской ширины
+rem - от стиля html
+vw – 1% ширины окна
+vh – 1% высоты окна
+vmin – наименьшее из (vw, vh), в IE9 обозначается vm
+vmax – наибольшее из (vw, vh)
+*/
 
 :root {
   --text-color: #757575;
@@ -463,9 +472,6 @@ a.accent.accent-item::after {
   align-items: baseline;
 }
 
-.blok-join {
-}
-
 .title-join {
   font-weight: 700;
   font-size: 14px;
@@ -616,7 +622,6 @@ a.accent.accent-item::after {
 
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-  position: ;
 }
 .card-item {
   position: relative;
@@ -667,6 +672,7 @@ a.accent.accent-item::after {
 
 .card-link {
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover,
